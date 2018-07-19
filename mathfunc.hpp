@@ -338,7 +338,7 @@ namespace MathFunc
             auto fnClipT = [](int nNum, int nDenom, double &ftE, double &ftL) -> bool
             {
                 if(nDenom == 0){
-                    return nNum < 0;
+                    return nNum <= 0;
                 }else{
                     double fT = 1.0 * nNum / nDenom;
                     if(nDenom > 0){
